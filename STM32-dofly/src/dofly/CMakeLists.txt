@@ -1,0 +1,5 @@
+foreach(sub IN LISTS subs)
+    message("config subdirectory::: ${sub}")
+    add_subdirectory("${sub}")
+    link_directories(${PROJECT_BINARY_DIR}/${sub})
+endforeach (sub)

@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "main.h": "c",
+        "stm32f1xx_ll_rcc.h": "c",
+        "stm32f1xx.h": "c",
+        "stm32f1xx_hal.h": "c",
+        "stm32f1xx_hal_conf.h": "c",
+        "stm32f1xx_hal_rcc.h": "c",
+        "stm32f1xx_hal_def.h": "c",
+        "led.h": "c",
+        "blink.h": "c",
+        "common.h": "c",
+        "time.h": "c",
+        "stm32f1xx_hal_gpio_ex.h": "c",
+        "stm32f1xx_it.h": "c"
+    }
+}
