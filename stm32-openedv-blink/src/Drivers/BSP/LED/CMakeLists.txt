@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 3.0.0)
+message("work dir :${CMAKE_CURRENT_SOURCE_DIR}")
 
 SET(SRC led.c)
 set(so led)
-message("do ${so}")
+message("add_library ${so}")
 add_library(${so} ${SRC})
 include(${DRIVERS_ROOT}/drivers-lib.cmake)

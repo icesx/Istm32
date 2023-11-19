@@ -4,7 +4,7 @@ add_definitions(
 )
 SET(SRC thesys.c)
 set(so thesys)
-message("do ${so}")
+message("add_library ${so}")
 add_library(${so} ${SRC})
 message("include ${DRIVERS_ROOT}/drivers-sub.cmake")
 include(${DRIVERS_ROOT}/drivers-lib.cmake)

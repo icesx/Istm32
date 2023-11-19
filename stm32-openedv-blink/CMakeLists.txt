@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0.0)
+message("work dir :${CMAKE_CURRENT_SOURCE_DIR}")
 project(stm32proj C CXX ASM)
 set(CMAKE_VERBOSE_MAKEFILE ON)
-# adjust project folder name if necessary
 
 message(STATUS "Building project: ${PROJECT_NAME}")
 set(STM32_CMAKE_DIR "${CMAKE_SOURCE_DIR}/../stm32-cmake-common")

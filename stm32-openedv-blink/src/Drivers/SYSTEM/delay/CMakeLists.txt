@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0.0)
 SET(SRC delay.c)
 set(so delay)
-message("do ${so}")
+message("add_library ${so}")
 add_library(${so} ${SRC})
 include(${DRIVERS_ROOT}/drivers-lib.cmake)

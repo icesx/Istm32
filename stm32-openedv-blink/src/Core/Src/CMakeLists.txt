@@ -1,4 +1,4 @@
-# STM32CubeMX generated source files
+message("work dir :${CMAKE_CURRENT_SOURCE_DIR}")
 
 set(CUBEMX_SRC
     ${PROJECT_ROOT_DIR}/src/Core/Src/main.c
@@ -18,6 +18,7 @@ foreach(sub IN LISTS link_list)
   target_link_libraries(${ELF_TARGET} PUBLIC ${sub} -lc -lm -lnosys)  
 endforeach(sub)
 
-
+message("target_link_libraries stm32f1xx_hal to ${ELF_TARGET}")
 target_link_libraries(${ELF_TARGET} PUBLIC cmsis stm32f1xx_hal -lc -lm -lnosys)
+
 include(${STM32_CMAKE_DIR}/cmake/stm32-gcc-postbuild.cmake)  

@@ -1,5 +1,6 @@
+message("work dir :${CMAKE_CURRENT_SOURCE_DIR}")
 foreach(sub IN LISTS system_dir_list)
-    message("config subdirectory::: ${sub}")
+    message("add subdirectory: ${sub}")
     message("add include_directories: ${DRIVERS_ROOT}/${parent}/${sub}")
     add_subdirectory("${sub}")
     link_directories(${PROJECT_BINARY_DIR}/${parent}/${sub})

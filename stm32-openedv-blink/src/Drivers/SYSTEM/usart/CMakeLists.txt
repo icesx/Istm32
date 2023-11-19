@@ -1,6 +1,7 @@
+message("work dir :${CMAKE_CURRENT_SOURCE_DIR}")
 cmake_minimum_required(VERSION 3.0.0)
 SET(SRC usart.c)
 set(so usart)
-message("do ${so}")
+message("add_library ${so}")
 add_library(${so} ${SRC})
 include(${DRIVERS_ROOT}/drivers-lib.cmake)
