@@ -1,5 +1,4 @@
-SET(_subs "LED")
-foreach(sub IN LISTS _subs)
+foreach(sub IN LISTS bsp_list)
     message("config subdirectory::: ${sub}")
     message("add include_directories: ${DRIVERS_ROOT}/${parent}/${sub}")
     include_directories(${DRIVERS_ROOT}/${parent}/${sub})

@@ -1,5 +1,8 @@
 set(DRIVERS_ROOT ${CMAKE_CURRENT_LIST_DIR})
-set(subs "SYSTEM;BSP")
+set(subs 
+    SYSTEM
+    BSP
+    )
 foreach(sub IN LISTS subs)
     set(parent "${sub}")
     message("config subdirectory::: ${sub}")

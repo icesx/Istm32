@@ -12,9 +12,11 @@ target_link_libraries(${ELF_TARGET} PRIVATE -T${LINKER_SCRIPT} ${EXTRA_LINK_FLAG
 target_include_directories(${ELF_TARGET} PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/../Inc>)
 
-target_link_libraries(${ELF_TARGET} PUBLIC led -lc -lm -lnosys)
-target_link_libraries(${ELF_TARGET} PUBLIC delay -lc -lm -lnosys)
-target_link_libraries(${ELF_TARGET} PUBLIC thesys -lc -lm -lnosys)  
+
+foreach(sub IN LISTS link_list)
+  message("target_link_libraries ${sub} to ${ELF_TARGET}")
+  target_link_libraries(${ELF_TARGET} PUBLIC ${sub} -lc -lm -lnosys)  
+endforeach(sub)
 
 
 target_link_libraries(${ELF_TARGET} PUBLIC cmsis stm32f1xx_hal -lc -lm -lnosys)
