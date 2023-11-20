@@ -17,7 +17,7 @@ set(bsp_dir_list
 set(link_list
     led
     delay
-    thesys
+    sys
     beep
     key
     )
