@@ -2,11 +2,6 @@ message("work dir :${CMAKE_CURRENT_SOURCE_DIR}")
 SET(core_list 
     Src
     )
-set(link_list
-    led
-    delay
-    thesys
-    )
 foreach(sub IN LISTS core_list)
     message("add subdirectory ${sub}")
     add_subdirectory("${sub}")
