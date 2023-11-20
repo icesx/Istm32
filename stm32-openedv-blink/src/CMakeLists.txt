@@ -4,23 +4,33 @@ set(drivers_dir_list
     SYSTEM
     BSP
     )
+
 set(system_dir_list
     delay
     usart
     sys
     )
+
 set(bsp_dir_list
     LED
     BEEP
     KEY
+    TIMER
+    TPAD
+    ADC
+    LSENS
+    WDG
     )
+
 set(link_list
     led
     delay
     sys
     beep
     key
+    usart
     )
+
 add_subdirectory(Core)
 add_subdirectory(Drivers)
 ## add post-build targets
